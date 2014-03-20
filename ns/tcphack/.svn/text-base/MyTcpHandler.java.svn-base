@@ -1,0 +1,24 @@
+package ns.tcphack;
+
+class MyTcpHandler extends TcpHandler {
+	public static void main(String[] args) {
+		new MyTcpHandler();
+	}
+
+	public MyTcpHandler() {
+		super();
+
+		// TODO: Send first packet, use this.sendData(byte[]).
+		//       The data passed to sendData should contain raw
+		//       IP/TCP/(optionally HTTP) headers and data.      
+	}
+
+	/**
+	 * Called when a packet is received from the server.
+	 * byte[] data contains the raw IP/TCP/(optionally HTTP) 
+	 * headers and data.
+	 */
+	public void dataReceived(byte[] data) {
+		// TODO: Implement this method, respond to packets
+	}
+}
